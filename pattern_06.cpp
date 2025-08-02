@@ -1,10 +1,14 @@
+// 3
+// 32
+// 321
+
 #include <iostream>
 using namespace std;
 
 
 int main() {
-    for (int i = 1; i <=3; i++) {
-        for (int j = 1; j <=i; j++) {
+    for (int i = 3; i>=1 ; i--) {
+        for (int j = 3; j >=i; j--) {
             cout << j;
         }
         cout << endl;
