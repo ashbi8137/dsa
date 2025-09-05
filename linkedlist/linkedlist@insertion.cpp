@@ -50,6 +50,36 @@ void insertAtPos(Node* head,int pos){
    }   
    posNode->next = temp->next;   
    temp->next = posNode;         
+}
+
+//delete at first
+void deleteAtFirst(Node*& head){
+    Node* temp = head;
+    head = head->next;
+    delete temp;
+    
+}
+
+//deletion at end
+void deleteAtEnd(Node* head){
+    Node* temp = head;
+    while (temp->next->next != nullptr) { 
+        temp = temp->next;
+    }    
+    delete temp->next;   
+    temp->next = nullptr; 
+    
+}
+
+//deletion at a position
+void deleteAtPosition(Node*& head,int pos){
+    Node* temp = head;
+    for(int i=1; i<pos-1; i++){
+        temp=temp->next;
+    }
+    Node* toDelete = temp->next;
+    temp->next = temp->next->next;
+    delete toDelete;
 
 }
 
@@ -69,14 +99,13 @@ int main(){
     //call functions
 
     printList(head);
-
-    insertAtBeginning(head);
-    printList(head);
-    
-    insertAtEnd(head);
-    printList(head);
-    insertAtPos(head,2);
-    printList(head);
+    // insertAtBeginning(head);  
+    // insertAtEnd(head);
+    // insertAtPos(head,2);
+    // deleteAtEnd(head);
+    // deleteAtEnd(head);
+    // deleteAtPosition(head,2);
+    // printList(head);
     
     return 0;
 }
