@@ -41,6 +41,17 @@ void insertAtEnd(Node* head){
 
 }
 //function for insertion at specific position
+void insertAtPos(Node* head,int pos){
+   Node* posNode = new Node();
+   posNode -> data = 100;
+   Node* temp = head;
+   for(int i=1;i<pos;i++){    
+        temp = temp -> next ;    
+   }   
+   posNode->next = temp->next;   
+   temp->next = posNode;         
+
+}
 
 int main(){
 
@@ -56,14 +67,16 @@ int main(){
     third -> data = 30;    third -> next = nullptr;
 
     //call functions
+
     printList(head);
-    // insertAtBeginning(head);
+
+    insertAtBeginning(head);
+    printList(head);
+    
     insertAtEnd(head);
     printList(head);
-
-   
+    insertAtPos(head,2);
+    printList(head);
     
-
-
     return 0;
 }
