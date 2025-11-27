@@ -1,6 +1,17 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "xstring": "cpp"
-    }
-}
+        "xstring": "cpp",
+        "istream": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    },
+    "editor.quickSuggestions": { "other": false, "comments": false, "strings": false },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "off",
+    "editor.suggest.showSnippets": false,
+    "editor.suggest.showWords": false
+}   
