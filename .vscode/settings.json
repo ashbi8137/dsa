@@ -4,7 +4,12 @@
         "xstring": "cpp",
         "istream": "cpp",
         "string": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "unordered_map": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp"
     },
     "editor.quickSuggestions": { "other": false, "comments": false, "strings": false },
     "editor.suggestOnTriggerCharacters": false,

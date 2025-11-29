@@ -103,9 +103,6 @@ int main(){
     // insertAtEnd(head);
     // insertAtPos(head,2);
     // deleteAtEnd(head);
-    // deleteAtEnd(head);
     // deleteAtPosition(head,2);
-    // printList(head);
-    
     return 0;
 }
